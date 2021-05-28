@@ -1,0 +1,5 @@
+train: ../train/images
+val: ../valid/images
+
+nc: 15
+names: ['beef curry', 'chicken nugget', 'french fries', 'green salad', 'grilled salmon', 'hamburger', 'hot dog', 'natto', 'omelet', 'pizza', 'rice ball', 'rice', 'spaghetti', 'steak', 'waffle']
