@@ -1,18 +1,29 @@
 # nutrifit-ml
 ML repository for Nutrifit project. The ML part of Nutrifit project is detect 15 food categories.
 
-15 food category:
-
-1.  
-2.  
-3.  
+## 15 food category:
+1. beef curry
+2. chicken nugget
+3. french fries
+4. green salad
+5. grilled salmon
+6. hamburger
+7. hot dog
+8. natto
+9. omelet
+10. pizza
+11. rice
+12. rice ball
+13. spaghetti
+14. steak
+15. waffle
 
 ## Experiment evaluation tracking
 - all model train and evaluate using FOOD15 v2 dataset
 - `map 0.5` as single matrics (bigger better)
 - subject to: `ukuran*` (free), `kategori` (15 food, more better), dan `waktu prediksi**` (5 sec, less better)
 
-|           name           | ukuran (MB) | kategori | waktu prediksi (s) | map 0.5 (val) | map 0.95 (val) | epoch / iterasi | link gdrive |
+|           name           | ukuran (MB) | kategori | waktu prediksi (s) | map 0.5 (val) | map 0.95 (val) | epoch / iterasi | weights*** |
 |:------------------------:|:-----------:|:--------:|:------------------:|:-------------:|:--------------:|:---------------:|:-----------:|
 | YOLOv5s-transformer      |        14.4 |       15 |                    | 82.7          | 54.8           |             301 |             |
 | YOLOv5s-transformer-best |             |       15 |                    | 48.8          | 23.5           |                 |             |
@@ -35,8 +46,17 @@ ML repository for Nutrifit project. The ML part of Nutrifit project is detect 15
 | YOLOv5m                  |         162 |       15 |                    | 88.3          |                |             200 |             |
 
 `*` this metrics not longer measured as project plan has change
+
 `**` this metrics measure as a whole user experienced
+
+`***` all files in this link https://drive.google.com/drive/folders/1GJOphru8FKrkiW_ihhpe3xnv8A1S8ViS?usp=sharing 
+
+## Results
+The result of the selected model inference https://drive.google.com/drive/folders/1GJOphru8FKrkiW_ihhpe3xnv8A1S8ViS?usp=sharing
+[![N|Solid](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/results.jpg?token=ALAAYUGUXFY2CQOPGJUQ32TAXU6VA)]()
 
 ## Deployment
 We decide to deploy selected model on Virtual Machine and comunicate to user using ResAPI.
 This API endpoint recive .jpg image sent from android app backend and return list of food detected on the image.
+
+[![N|Solid](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/resAPI.jpg?token=ALAAYUEI3L6ZDQAO3GXSRPTAXU6J2)]()
