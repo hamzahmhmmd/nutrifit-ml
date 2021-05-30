@@ -19,7 +19,7 @@ ML repository for Nutrifit project. The ML part of Nutrifit project is detect 15
 15. waffle
 
 ## Experiment evaluation tracking
-- all model train and evaluate using FOOD15 v2 dataset
+- all model train and evaluate using FOOD15 v2 dataset (https://drive.google.com/drive/folders/1c_D7QE6YUB5ILFR1aCpREV8EOFFk1BwD?usp=sharing)
 - `map 0.5` as single matrics (bigger better)
 - subject to: `ukuran*` (free), `kategori` (15 food, more better), dan `waktu prediksi**` (5 sec, less better)
 
@@ -49,14 +49,19 @@ ML repository for Nutrifit project. The ML part of Nutrifit project is detect 15
 
 `**` this metrics measure as a whole user experienced
 
-`***` all files in this link https://drive.google.com/drive/folders/1GJOphru8FKrkiW_ihhpe3xnv8A1S8ViS?usp=sharing 
+`***` all files in this link https://drive.google.com/drive/folders/1H1M3BRpyGXHtsOhGQx3AHhNlEThmTDh_?usp=sharing 
 
 ## Results
 The result of the selected model inference https://drive.google.com/drive/folders/1GJOphru8FKrkiW_ihhpe3xnv8A1S8ViS?usp=sharing
+
 [![N|Solid](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/results.jpg?token=ALAAYUGUXFY2CQOPGJUQ32TAXU6VA)]()
 
 ## Deployment
 We decide to deploy selected model on Virtual Machine and comunicate to user using ResAPI.
 This API endpoint recive .jpg image sent from android app backend and return list of food detected on the image.
+
+strat flask server `nohup python resapi.py --port 4040 &`
+
+send request to server `curl -X POST -F image=@path/to/iamge.jpg http://flask-server.url:P.O.R.T/v1/object-detection/yolov5s/`
 
 [![N|Solid](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/resAPI.jpg?token=ALAAYUEI3L6ZDQAO3GXSRPTAXU6J2)]()
