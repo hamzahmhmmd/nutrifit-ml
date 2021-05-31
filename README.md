@@ -65,3 +65,7 @@ strat flask server `nohup python resapi.py --port 4040 &`
 send request to server `curl -X POST -F image=@path/to/iamge.jpg http://flask-server.url:P.O.R.T/v1/object-detection/yolov5s/`
 
 [![N|Solid](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/resAPI.jpg?token=ALAAYUEI3L6ZDQAO3GXSRPTAXU6J2)]()
+
+## Credits
+- Datasets http://foodcam.mobi/dataset256.html
+- Yolov5 https://github.com/ultralytics/yolov5
