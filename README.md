@@ -23,7 +23,7 @@ ML repository for Nutrifit project. The ML part of Nutrifit project is detect 15
 - `map 0.5` as single matrics (bigger better)
 - subject to: `ukuran*` (free), `kategori` (15 food, more better), dan `waktu prediksi**` (5 sec, less better)
 
-|           name           | ukuran (MB) | kategori | waktu prediksi (s) | map 0.5 (val) | map 0.95 (val) | epoch / iterasi | weights*** |
+|           name           | ukuran (MB) | kategori | waktu prediksi (s) | map 0.5 (val) | map 0.95 (val) | epoch / iterasi | weights file***  |
 |:------------------------:|:-----------:|:--------:|:------------------:|:-------------:|:--------------:|:---------------:|:-----------:|
 | YOLOv5s-transformer      |        14.4 |       15 |                    | 82.7          | 54.8           |             301 |             |
 | YOLOv5s-transformer-best |             |       15 |                    | 48.8          | 23.5           |                 |             |
@@ -67,5 +67,6 @@ send request to server `curl -X POST -F image=@path/to/iamge.jpg http://flask-se
 [![N|Solid](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/resAPI.jpg?token=ALAAYUEI3L6ZDQAO3GXSRPTAXU6J2)]()
 
 ## Credits
-- Datasets http://foodcam.mobi/dataset256.html
-- Yolov5 https://github.com/ultralytics/yolov5
+- Datasets (allow us to use for non-commercial research purpose) http://foodcam.mobi/dataset256.html
+- Yolov5 implementation https://github.com/ultralytics/yolov5
+- Yolov4 implementation https://github.com/AlexeyAB/darknet/ and https://github.com/roboflow-ai/darknet
