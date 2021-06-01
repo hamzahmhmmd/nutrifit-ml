@@ -91,3 +91,5 @@ just run the notebook .ipynb on goole colab env. and dont forget to add the data
 - Yolov5 implementation https://github.com/ultralytics/yolov5
 - Yolov4 implementation https://github.com/AlexeyAB/darknet/ and https://github.com/roboflow-ai/darknet
 - Shout out to roboflow team for giving away colaborative feature for free
+
+[![N|Solid](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png)]()
