@@ -1,7 +1,7 @@
 # nutrifit-ml
 ML repository for Nutrifit project. The ML part of Nutrifit project is detect 15 food categories.
 
-## 15 food category:
+#### 15 food category:
 1. beef curry
 2. chicken nugget
 3. french fries
@@ -23,7 +23,7 @@ ML repository for Nutrifit project. The ML part of Nutrifit project is detect 15
 - `map 0.5` as single matrics (bigger better)
 - subject to: `ukuran*` (free), `kategori` (15 food, more better), dan `waktu prediksi**` (5 sec, less better)
 
-|           name           | ukuran (MB) | kategori | waktu prediksi (s) | map 0.5 (val) | map 0.95 (val) | epoch / iterasi | weights file***  |
+|           name           | ukuran (MB) | kategori | waktu prediksi (s) | map 0.5 (val) | map 0.95 (val) | epoch / iterasi | weights files***  |
 |:------------------------:|:-----------:|:--------:|:------------------:|:-------------:|:--------------:|:---------------:|:-----------:|
 | YOLOv5s-transformer      |        14.4 |       15 |                    | 82.7          | 54.8           |             301 |             |
 | YOLOv5s-transformer-best |             |       15 |                    | 48.8          | 23.5           |                 |             |
@@ -60,9 +60,20 @@ The result of the selected model inference https://drive.google.com/drive/folder
 We decide to deploy selected model on Virtual Machine and comunicate to user using ResAPI.
 This API endpoint recive .jpg image sent from android app backend and return list of food detected on the image.
 
-strat flask server `nohup python resapi.py --port 4040 &`
+strat flask server `$ nohup python resapi.py --port 4040 &`
 
-send request to server `curl -X POST -F image=@path/to/iamge.jpg http://flask-server.url:P.O.R.T/v1/object-detection/yolov5s/`
+send request to server `$ curl -X POST -F image=@path/to/iamge.jpg http://flask-server.url:P.O.R.T/v1/object-detection/yolov5s/`
+
+## Reproducibility
+#### Model reproducibility
+just run the notebook .ipynb on goole colab env. and dont forget to add the dataset from (https://drive.google.com/file/d/1lF_9VNyNVDcD8QxQivzOzCn_4LnkZheJ/view?usp=sharing)
+#### Deployment reproducibility
+1. set a VM instance
+2. install requirements.txt
+3. download model files from (https://drive.google.com/drive/folders/1H1M3BRpyGXHtsOhGQx3AHhNlEThmTDh_?usp=sharing)
+4. makesure model path in `resapi.py` pointing the model file
+5. run server `$ python resapi.py`
+6. send a request
 
 [![N|Solid](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/resAPI.jpg?token=ALAAYUEI3L6ZDQAO3GXSRPTAXU6J2)]()
 
