@@ -21,7 +21,7 @@ ML repository for Nutrifit project. The ML part of Nutrifit project is detect 15
 ## Experiment evaluation tracking
 - all model train and evaluate using FOOD15 v2 dataset (https://drive.google.com/drive/folders/1c_D7QE6YUB5ILFR1aCpREV8EOFFk1BwD?usp=sharing)
 - `map 0.5` as single matrics (bigger better)
-- subject to: `ukuran*` (free), `kategori` (15 food, more better), dan `waktu prediksi**` (5 sec, less better)
+- subject to: `ukuran*` (free), `kategori` (15 food, higher better), dan `waktu prediksi**` (5 sec, less better)
 
 |           name           | ukuran (MB) | kategori | waktu prediksi (s) | map 0.5 (val) | map 0.95 (val) | epoch / iterasi |weights files|
 |:------------------------:|:-----------:|:--------:|:------------------:|:-------------:|:--------------:|:---------------:|:-----------:|
@@ -44,7 +44,7 @@ ML repository for Nutrifit project. The ML part of Nutrifit project is detect 15
 | YOLOv5m-best             |             |       15 |                    | 49.8          | 30.4           |                 |pytorch (.pt)|
 | YOLOv5m-last             |             |       15 |                    | 53.4          | 32             |                 |pytorch (.pt)|
 
-`*` this metrics not longer measured/track as project plan has change
+`*` this metrics no longer measured/track as project plan has change
 
 `**` this metrics measure as a whole user experienced
 
@@ -53,10 +53,10 @@ All weights files in this link https://drive.google.com/drive/folders/1H1M3BRpyG
 
 ### Model Selection
 We are select `YOLOv5s6` model for our app. 
-The model reach highest map 0.5 on validation data and the model meet our criteria: capable to detect 15 food categories, 
+The model reaches highest map 0.5 on validation data and the model meet our criteria: capable to detect 15 food categories, 
 and based on our integration testing *waktu prediksi* is less than 5 s. 
 
-> We are aware the model not implemented in Tensorflow Framework. Base on the capstone project rules we are allowed to not using Tensorflow when it is `not available`. In our case the pre train model of YOLOv4 and YOLOv5 `only available` on darknet and pytorch. We are using pre tarin model (transfer learning) for faster training, faster experiment, sweetable for GPU limitation on colab, and equal MAP compare to training from scratch.
+> We are aware the model not implemented in Tensorflow Framework. Base on the capstone project rules we are allowed to not use Tensorflow when it is `not available`. In our case the pre-train model of YOLOv4 and YOLOv5 `only available` and `posible` on darknet and pytorch. We are using pre train model (transfer learning) for faster training, faster experiment, sweet able for GPU limitation on google colab, and equal MAP compare to training from scratch. We are `not possible` to select `YOLOv4-Tiny` (model on Tensorflow format) because the MAP far away lower than `YOLOv5s6`.
 > 
 > ![capstone rules](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/capstone-rules.jpg)
 
@@ -66,12 +66,12 @@ The result of the selected model inference https://drive.google.com/drive/folder
 [![N|Solid](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/results.jpg?token=ALAAYUGUXFY2CQOPGJUQ32TAXU6VA)]()
 
 ## Deployment
-We decide to deploy selected model on Virtual Machine and comunicate to user using ResAPI.
-This API endpoint recive .jpg image sent from android app backend and return list of food detected on the image.
+We decide to deploy the selected model on Virtual Machine and communicate to users using ResAPI.
+This API endpoint recive .jpg image sent from the android app backend and returns a list of food detected on the image.
 
 strat flask server `$ nohup python resapi.py --port 4040 &`
 
-send request to server `$ curl -X POST -F image=@path/to/iamge.jpg http://flask-server.url:P.O.R.T/v1/object-detection/yolov5s6/`
+send a request to server `$ curl -X POST -F image=@path/to/iamge.jpg http://flask-server.url:P.O.R.T/v1/object-detection/yolov5s6/`
 
 ## Reproducibility
 #### Model reproducibility
