@@ -1,6 +1,9 @@
 # nutrifit-ml
 ML repository for Nutrifit project. The ML part of Nutrifit project is detect 15 food categories.
 
+## Data
+Details about data for this project available in dataset above.
+
 #### 15 food category:
 1. beef curry
 2. chicken nugget
@@ -17,6 +20,11 @@ ML repository for Nutrifit project. The ML part of Nutrifit project is detect 15
 13. spaghetti
 14. steak
 15. waffle
+
+#### Sample Augmented Training Data
+[![N|Solid](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/train_batch0.jpg)]()
+[![N|Solid](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/train_batch1.jpg)]()
+[![N|Solid](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/train_batch2.jpg)]()
 
 ## Experiment evaluation tracking
 - all model train and evaluate using FOOD15 v2 dataset (https://drive.google.com/drive/folders/1c_D7QE6YUB5ILFR1aCpREV8EOFFk1BwD?usp=sharing)
