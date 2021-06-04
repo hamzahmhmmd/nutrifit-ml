@@ -1,0 +1,75 @@
+item {
+    name: "beef curry",
+    id: 1,
+    display_name: "beef curry"
+}
+item {
+    name: "chicken nugget",
+    id: 2,
+    display_name: "chicken nugget"
+}
+item {
+    name: "french fries",
+    id: 3,
+    display_name: "french fries"
+}
+item {
+    name: "green salad",
+    id: 4,
+    display_name: "green salad"
+}
+item {
+    name: "grilled salmon",
+    id: 5,
+    display_name: "grilled salmon"
+}
+item {
+    name: "hamburger",
+    id: 6,
+    display_name: "hamburger"
+}
+item {
+    name: "hot dog",
+    id: 7,
+    display_name: "hot dog"
+}
+item {
+    name: "natto",
+    id: 8,
+    display_name: "natto"
+}
+item {
+    name: "omelet",
+    id: 9,
+    display_name: "omelet"
+}
+item {
+    name: "pizza",
+    id: 10,
+    display_name: "pizza"
+}
+item {
+    name: "rice",
+    id: 11,
+    display_name: "rice"
+}
+item {
+    name: "rice ball",
+    id: 12,
+    display_name: "rice ball"
+}
+item {
+    name: "spaghetti",
+    id: 13,
+    display_name: "spaghetti"
+}
+item {
+    name: "steak",
+    id: 14,
+    display_name: "steak"
+}
+item {
+    name: "waffle",
+    id: 15,
+    display_name: "waffle"
+}
