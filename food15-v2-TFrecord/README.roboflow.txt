@@ -21,4 +21,5 @@ The following augmentation was applied to create 3 versions of each source image
 * Random Gaussian blur of between 0 and 1 pixels
 * Salt and pepper noise was applied to 1 percent of pixels
 
-
+Download
+https://drive.google.com/file/d/1-AQZ2OB5qAdmWkJXol1hdanUBtwD21DV/view?usp=sharing
