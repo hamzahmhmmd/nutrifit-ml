@@ -33,6 +33,9 @@ Details about data for this project available in dataset above.
 
 |           name           | ukuran (MB) | kategori | waktu prediksi (s) | map 0.5 (val) | map 0.95 (val) | epoch / iterasi |weights files|
 |:------------------------:|:-----------:|:--------:|:------------------:|:-------------:|:--------------:|:---------------:|:-----------:|
+| Efficientdet-d0          |             |       15 |                    |               |                |                 |  tf (saved) |
+| Efficientdet-d0 food15v3 |             |       15 |                    | 0.654         | 0.386          |            4500 |  tf (saved) |
+| Efficientdet-d1          |             |       15 |`**LACK OF MEMORY**`|               |                |                 |             |
 | YOLOv4-Tiny              |       23.09 |       15 |                    | 74.26         |                |            5452 |  tf (saved) |
 | YOLOv4-fp16              |         122 |       10 |                    |               |                |            1000 |  tf (saved) |
 | YOLOv4                   |         244 |       10 |                    | 67.57         |                |            1000 |  tf (saved) |
