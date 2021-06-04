@@ -23,6 +23,7 @@ Details about data for this project available in dataset above.
 
 #### Sample Augmented Training Data
 *mosaic image augmentation only implemented on YOLO not on EfficientDet*
+
 [![N|Solid](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/train_batch0.jpg)]()
 [![N|Solid](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/train_batch1.jpg)]()
 [![N|Solid](https://raw.githubusercontent.com/hamzahmhmmd/nutrifit-ml/master/train_batch2.jpg)]()
