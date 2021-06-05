@@ -35,18 +35,15 @@ Details about data for this project available in dataset above.
 
 |           name           | ukuran (MB) | kategori | waktu prediksi (s) | map 0.5 (val) | map 0.95 (val) | epoch / iterasi |weights files|
 |:------------------------:|:-----------:|:--------:|:------------------:|:-------------:|:--------------:|:---------------:|:-----------:|
-| Efficientdet-d0          |             |       15 |                    |               |                |                 |  tf (saved) |
-| Efficientdet-d0 food15v3 |             |       15 |                    | 0.654         | 0.386          |            4500 |  tf (saved) |
+| Efficientdet-d0          |             |       15 |                    | 79.40         | 0.462          |            8000 |  tf (saved) |
+| Efficientdet-d0 food15v3 |             |       15 |                    | 65.40         | 0.386          |            4500 |  tf (saved) |
 | Efficientdet-d1          |             |       15 |`**LACK OF MEMORY**`|               |                |                 |             |
 | YOLOv4-Tiny              |       23.09 |       15 |                    | 74.26         |                |            5452 |  tf (saved) |
 | YOLOv4-fp16              |         122 |       10 |                    |               |                |            1000 |  tf (saved) |
 | YOLOv4                   |         244 |       10 |                    | 67.57         |                |            1000 |  tf (saved) |
-| YOLOv4                   |             |        5 |                    |               |                |                 |  tf (saved) |
 | YOLOv5s-transformer      |        14.4 |       15 |                    | 82.7          | 54.8           |             301 |pytorch (.pt)|
-| YOLOv5s-transformer-best |             |       15 |                    | 48.8          | 23.5           |                 |pytorch (.pt)|
 | YOLOv5s-transformer-last |             |       15 |                    | 49.5          | 24.4           |                 |pytorch (.pt)|
 | `YOLOv5s6`               |     `23.98` |      `15`|                    | `85.7`        | `61.16`        |            `111`|`pytorch (.pt)`|
-| YOLOv5s6-best            |             |       15 |                    | 67.2          | 37.8           |                 |pytorch (.pt)|
 | YOLOv5s6-last            |             |       15 |                    | 60.1          | 35.3           |                 |pytorch (.pt)|
 | YOLOv5s-best             |        14.8 |       15 |                    | 80.3          | 49.7           |             300 |pytorch (.pt)|
 | YOLOv5s-last             |             |       15 |                    | 44            | 22.8           |                 |pytorch (.pt)|
